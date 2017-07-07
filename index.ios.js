@@ -2,6 +2,6 @@
  *IOS Entry point
  */
 import { AppRegistry } from 'react-native';
-import setup from './App/App.js';
+import AppNavigator from './App/IOSNavigator';
 
-AppRegistry.registerComponent('examen1', () => setup);
+AppRegistry.registerComponent('examen1', () => AppNavigator);
