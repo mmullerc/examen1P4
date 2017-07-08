@@ -13,10 +13,6 @@ var width = Dimensions.get('window').width
 
 class Index extends Component {
 
-  static navigationOptions = {
-   title: 'Home',
- }
-
     constructor(props, context){
       super(props, context);
       this.state = {

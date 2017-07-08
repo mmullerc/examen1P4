@@ -21,11 +21,11 @@ class AreaType extends Component {
   render() {
       return (
         <View style={{flex:1}}>
-          <View style={styles.container}>
-            <Text style={styles.title}>Mesas: </Text>
+          <View style={styles.titleContainer1}>
+            <Text style={styles.title1}>Mesas: </Text>
           </View>
-          <View style={styles.container}>
-            <Text style={styles.title}>Mesas: </Text>
+          <View style={styles.titleContainer2}>
+            <Text style={styles.title2}>Mesas: </Text>
           </View>
         </View>
     );
@@ -36,42 +36,26 @@ const styles  = StyleSheet.create({
     mainContainer : {
       backgroundColor : '#e1a9a9',
     },
-    title : {
+    titleContainer1 : {
+      justifyContent:'center',
+      backgroundColor: '#CCCCFF',
+      height: height*.5
+    },
+    title1: {
       fontSize: 40,
       justifyContent:'center',
+      backgroundColor: '#0000FF',
+    },
+    titleContainer2 : {
+      justifyContent:'center',
       alignItems:'center',
-      textAlign: 'center',
-      marginTop: 150,
-      marginBottom: 15
+      backgroundColor: '#0000FF',
+      height: height*.5
     },
-    subtractButtonContainer : {
-      backgroundColor: 'green',
-      width: 60,
-      height: 60,
-      justifyContent: 'center',
-      backgroundColor: '#ffffff'
-    },
-    addButtonContainer : {
-      backgroundColor: 'green',
-      width: 60,
-      height: 60,
-      justifyContent: 'center',
-      backgroundColor: '#ffffff'
-    },
-    numberOfTables : {
-      fontSize: 40
-    },
-    numOfTablesContainer: {
-      marginLeft: 60,
-      marginRight: 60
-    },
-    nextButton : {
-       marginTop: 'auto',
-       flexDirection: 'row',
-       justifyContent: 'center',
-       alignItems: 'center',
-       height: 65,
-       backgroundColor: '#f9eeee'
+    title2: {
+      fontSize: 40,
+      justifyContent:'center',
+      backgroundColor: '#0000FF',
     }
 });
 

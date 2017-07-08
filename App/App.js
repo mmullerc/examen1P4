@@ -11,6 +11,10 @@ import Index from './Index';
 
 class App extends Component {
 
+  constructor(props) {
+    super(props)
+  }
+
   render() {
     return (
       <View style={styles.container}>
